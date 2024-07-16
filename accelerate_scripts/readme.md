@@ -1,4 +1,9 @@
 
-- `accelerate launch --num_processes 2 ./utils/multi_gpus_inference.py`
+- references
+    - https://medium.com/@geronimo7/llms-multi-gpu-inference-with-accelerate-5a8333e4c5db
+- `accelerate launch --num_processes 2 multi_gpus_inference.py`
     - dual 4090s
-    - `tokens/sec: 91.0, time 109.77921056747437, total tokens 10000, total prompts 100`
+    - tokens/sec: 91.0, time 109.77921056747437, total tokens 10000, total prompts 100
+- `accelerate launch --num_processes 2 multi_gpus_inference_batched.py`
+    - dual 4090s
+    - tokens/sec: 865.0, time elapsed: 11.550604343414307, num_tokens 10000
