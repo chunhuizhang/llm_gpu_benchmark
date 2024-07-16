@@ -7,3 +7,6 @@
 - `accelerate launch --num_processes 2 multi_gpus_inference_batched.py`
     - dual 4090s
     - tokens/sec: 865.0, time elapsed: 11.550604343414307, num_tokens 10000
+- `accelerate launch --num_processes 2 multi_gpus_inference_batched-kv.py`
+    - dual 4090s 
+    - tokens/sec: 957.0, time elapsed: 10.44498872756958, num_tokens 10000
